@@ -53,18 +53,6 @@ If you're not sure where to start, check out [contributing.md](contributing.md) 
 
 ## Community
 
-<<<<<<< HEAD
 Starport is a free and open-source product maintained by [Notional](https://notional.ventures). Here's where you can find us. Stay in touch.
 
 
-=======
-Starport is a free and open-source product maintained by [Ignite](https://ignt.com). Here's where you can find us. Stay in touch.
-
-- [Starport.com website](https://starport.com)
-- [@StarportHQ on Twitter](https://twitter.com/StarportHQ)
-- [Starport.com/blog](https://starport.com/blog/)
-- [Starport Discord](https://discord.gg/ignt)
-- [Starport YouTube](https://www.youtube.com/channel/UCXMndYLK7OuvjvElSeSWJ1Q)
-- [Starport docs](https://docs.starport.com/)
-- [Ignite jobs](https://ignt.com/careers/)
->>>>>>> 2c2088a515513973b34796673fcbb937e84caf40
