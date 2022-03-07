@@ -1,7 +1,7 @@
 {
 	"name": "nodetime",
 	"version": "1.0.0",
-	"description": "Starport's Swiss knife",
+	"description": "Tinyport's Swiss knife",
 	"bin": {
 		"nodetime": "./nodetime"
 	},

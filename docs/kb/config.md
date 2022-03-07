@@ -154,7 +154,7 @@ init:
 
 ## host
 
-Configuration of host names and ports for processes started by Starport.
+Configuration of host names and ports for processes started by Tinyport.
 
 **host example**
 

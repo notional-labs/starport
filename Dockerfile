@@ -18,7 +18,7 @@ ENV GOPROXY https://proxy.golang.org
 #
 FROM base as builder
 
-WORKDIR /starport
+WORKDIR /tinyport
 
 # cache dependencies.
 COPY ./go.mod . 
@@ -36,16 +36,16 @@ FROM base
 RUN useradd -ms /bin/bash tendermint
 USER tendermint
 
-COPY --from=builder /go/bin/starport /usr/bin
+COPY --from=builder /go/bin/tinyport /usr/bin
 
 WORKDIR /apps
 
 # see docs for exposed ports:
-#   https://docs.starport.network/kb/config.html#host
+#   https://docs.tinyport.network/kb/config.html#host
 EXPOSE 26657
 EXPOSE 26656
 EXPOSE 6060 
 EXPOSE 9090 
 EXPOSE 1317 
 
-ENTRYPOINT ["starport"]
+ENTRYPOINT ["tinyport"]

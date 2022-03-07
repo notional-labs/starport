@@ -12,7 +12,7 @@
 
 - Upgraded Flutter template to `v2.0.3`
 
-## [`v0.19.2`](https://github.com/tendermint/starport/milestone/14)
+## [`v0.19.2`](https://github.com/notional-labs/tinyport/milestone/14)
 
 ### Fixes
 
@@ -26,7 +26,7 @@
 
 ### Breaking Changes
 
-- Deprecated the Starport Modules [tendermint/spm](https://github.com/tendermint/spm) repo and moved the contents to the Starport repo [`starport/pkg/`](https://github.com/tendermint/starport/tree/develop/starport/pkg/) in [PR 1971](https://github.com/tendermint/starport/pull/1971/files) 
+- Deprecated the Tinyport Modules [tendermint/spm](https://github.com/tendermint/spm) repo and moved the contents to the Tinyport repo [`tinyport/pkg/`](https://github.com/notional-labs/tinyport/tree/develop/tinyport/pkg/) in [PR 1971](https://github.com/notional-labs/tinyport/pull/1971/files) 
  
     Updates are required if your chain uses these packages: 
 
@@ -35,7 +35,7 @@
     - `spm/openapiconsole` is now `pkg/openapiconsole`
     - `testutil/sample` is now `cosmostestutil/sample`
 
-- Updated the faucet HTTP API schema. See API changes in [fix: improve faucet reliability #1974](https://github.com/tendermint/starport/pull/1974/files#diff-0e157f4f60d6fbd95e695764df176c8978d85f1df61475fbfa30edef62fe35cd)
+- Updated the faucet HTTP API schema. See API changes in [fix: improve faucet reliability #1974](https://github.com/notional-labs/tinyport/pull/1974/files#diff-0e157f4f60d6fbd95e695764df176c8978d85f1df61475fbfa30edef62fe35cd)
 
 ## `v0.19.1`
 
@@ -47,12 +47,12 @@
 
 ### Features
 
-- `starport scaffold` commands support `ints`, `uints`, `strings`, `coin`, `coins` as field types (#1579)
+- `tinyport scaffold` commands support `ints`, `uints`, `strings`, `coin`, `coins` as field types (#1579)
 - Added simulation testing with `simapp` to the default template (#1731)
-- Added `starport generate dart` to generate a Dart client from protocol buffer files
-- Added `starport scaffold flutter` to scaffold a Flutter mobile app template
+- Added `tinyport generate dart` to generate a Dart client from protocol buffer files
+- Added `tinyport scaffold flutter` to scaffold a Flutter mobile app template
 - Parameters can be specified with a new `--params` flag when scaffolding modules (#1716)
-- Simulations can be run with `starport chain simulate`
+- Simulations can be run with `tinyport chain simulate`
 - Set `cointype` for accounts in  `config.yml` (#1663)
 
 ### Fixes
@@ -66,7 +66,7 @@
 
 ### Breaking Changes
 
-- Starport v0.18 comes with Cosmos SDK v0.44 that introduced changes that are not compatible with chains that were scaffolded with Starport versions lower than v0.18. After upgrading from Starport v0.17.3 to Starport v0.18, you must update the default blockchain template to use blockchains that were scaffolded with earlier versions. See [Migration](./docs/migration/index.md).
+- Tinyport v0.18 comes with Cosmos SDK v0.44 that introduced changes that are not compatible with chains that were scaffolded with Tinyport versions lower than v0.18. After upgrading from Tinyport v0.17.3 to Tinyport v0.18, you must update the default blockchain template to use blockchains that were scaffolded with earlier versions. See [Migration](./docs/migration/index.md).
 
 ### Features:
 
@@ -74,14 +74,14 @@
 - Added `--signer` flag to `message`, `list`, `map`, and `single` scaffolding to allow customizing the name of the signer of the message
 - Added `--index` flag to `scaffold map` to provide a custom list of indices
 - Added `scaffold type` to scaffold a protocol buffer definition of a type
-- Automatically check for new Starport versions
-- Added `starport tools completions` to generate CLI completions
-- Added `starport account` commands to manage accounts (key pairs)
-- `starport version` now prints detailed information about OS, Go version, and more
+- Automatically check for new Tinyport versions
+- Added `tinyport tools completions` to generate CLI completions
+- Added `tinyport account` commands to manage accounts (key pairs)
+- `tinyport version` now prints detailed information about OS, Go version, and more
 - Modules are scaffolded with genesis validation tests
 - Types are scaffolded with tests for `ValidateBasic` methods
 - `cosmosclient` has been refactored and can be used as a library for interacting with Cosmos SDK chains
-- `starport relayer` uses `starport account`
+- `tinyport relayer` uses `tinyport account`
 - Added `--path` flag for all `scaffold`, `generate` and `chain` commands
 - Added `--output` flag to the `build` command
 - Configure port of gRPC web in `config.yml` with the `host.grpc-web` property
@@ -115,7 +115,7 @@
 - Set visibility to `public` on Gitpod's port 7575 to enable peer discovery for SPN
 - Fixed GitHub action that releases blockchain node's binary
 - Fixed an error in chain scaffolding due to "unknown revision"
-- Fixed an error in `starport chain serve` by limiting the scope where proto files are searched for
+- Fixed an error in `tinyport chain serve` by limiting the scope where proto files are searched for
 
 ## `v0.17`
 
@@ -123,17 +123,17 @@
 
 - Added GitHub action that automatically builds and releases a binary
 - The `--release` flag for the `build` command adds the ability to release binaries in a tarball with a checksum file.
-- Added the flag `--no-module` to the command `starport app` to prevent scaffolding a default module when creating a new app
+- Added the flag `--no-module` to the command `tinyport app` to prevent scaffolding a default module when creating a new app
 - Added `--dep` flag to specify module dependency when scaffolding a module
 - Added support for multiple naming conventions for component names and field names
 - Print created and modified files when scaffolding a new component
-- Added `starport generate` namespace with commands to generate Go, Vuex and OpenAPI
-- Added `starport chain init` command to initialize a chain without starting a node
+- Added `tinyport generate` namespace with commands to generate Go, Vuex and OpenAPI
+- Added `tinyport chain init` command to initialize a chain without starting a node
 - Scaffold a type that contains a single instance in the store
-- Introduced `starport tools` command for advanced users. Existing `starport relayer lowlevel *` commands are also moved under `tools`
+- Introduced `tinyport tools` command for advanced users. Existing `tinyport relayer lowlevel *` commands are also moved under `tools`
 - Added `faucet.rate_limit_window` property to `config.yml`
 - Simplified the `cmd` package in the template
-- Added `starport scaffold band` oracle query scaffolding
+- Added `tinyport scaffold band` oracle query scaffolding
 - Updated TypeScript relayer to 0.2.0
 - Added customizable gas limits for the relayer
 
@@ -141,9 +141,9 @@
 
 - Use snake case for generated files
 - Prevent using incorrect module name
-- Fixed permissions issue when using Starport in Docker
+- Fixed permissions issue when using Tinyport in Docker
 - Ignore hidden directories when building a chain
-- Fix error when scaffolding an IBC module in non-Starport chains
+- Fix error when scaffolding an IBC module in non-Tinyport chains
 
 ## `v0.16.2`
 
@@ -161,32 +161,32 @@
 
 ### Features
 
-- The new `join` flag adds the ability to pass a `--genesis` file and `--peers` address list with `starport network chain join`
-- The new `show` flag adds the ability to show `--genesis` and `--peers` list with `starport network chain show`
-- `protoc` is now bundled with Starport CLI so you don't need to install it anymore
-- Starport is now published automatically on the Docker Hub
-- `starport relayer` `configure` and `connect` commands now use the [confio/ts-relayer](https://github.com/confio/ts-relayer) under the hood. Also, checkout the new `starport relayer lowlevel` command
+- The new `join` flag adds the ability to pass a `--genesis` file and `--peers` address list with `tinyport network chain join`
+- The new `show` flag adds the ability to show `--genesis` and `--peers` list with `tinyport network chain show`
+- `protoc` is now bundled with Tinyport CLI so you don't need to install it anymore
+- Tinyport is now published automatically on the Docker Hub
+- `tinyport relayer` `configure` and `connect` commands now use the [confio/ts-relayer](https://github.com/confio/ts-relayer) under the hood. Also, checkout the new `tinyport relayer lowlevel` command
 - An OpenAPI spec for your chain is now automatically generated with `serve` and `build` commands: a console is available at `localhost:1317` and spec at `localhost:1317/static/openapi.yml` by default for the newly scaffolded chains
-- Keplr extension is supported on web apps created with Starport
+- Keplr extension is supported on web apps created with Tinyport
 - Added tests to the scaffold
 - Improved reliability of scaffolding by detecting placeholders
-- Added ability to scaffold modules in chains not created with Starport
+- Added ability to scaffold modules in chains not created with Tinyport
 - Added the ability to scaffold Cosmos SDK queries
-- IBC relayer support is available on web apps created with Starport
+- IBC relayer support is available on web apps created with Tinyport
 - New types without CRUD operations can be added with the `--no-message` flag in the `type` command
 - New packet without messages can be added with the `--no-message` flag in the `packet` command
-- Added `docs` command to read Starport documentation on the CLI
-- Published documentation on https://docs.starport.network
+- Added `docs` command to read Tinyport documentation on the CLI
+- Published documentation on https://docs.tinyport.network
 - Added `mnemonic` property to account in the `accounts` list to generate a key from a mnemonic
 
 ### Fixes
 
-- `starport network chain join` hanging issue when creating an account
+- `tinyport network chain join` hanging issue when creating an account
 - Error when scaffolding a chain with an underscore in the repo name (thanks @bensooraj!)
 
 ### Changes
 
-- `starport serve` no longer starts the web app in the `vue` directory (use `npm` to start it manually)
+- `tinyport serve` no longer starts the web app in the `vue` directory (use `npm` to start it manually)
 - Default scaffold no longer includes legacy REST API endpoints (thanks @bensooraj!)
 - Removed support for Cosmos SDK v0.39 Launchpad
 
@@ -201,8 +201,8 @@
 - Advanced relayer options for configuring ports and versions
 - Scaffold now follows `MsgServer` convention
 - Message scaffolding
-- Added `starport type ... --indexed` to scaffold indexed types
-- Custom config file support with `starport serve -c custom.yml`
+- Added `tinyport type ... --indexed` to scaffold indexed types
+- Custom config file support with `tinyport serve -c custom.yml`
 - Detailed terminal output for created accounts: name, address, mnemonic
 - Added spinners to indicate progress for long-running commands
 - Updated to Cosmos SDK v0.42.1
@@ -216,18 +216,18 @@
 
 ### Features
 
-- Chain state persistence between `starport serve` launches
-- Integrated Stargate app's `scripts/protocgen` into Starport as a native feature. Running `starport build/serve` will automatically take care of building proto files without a need of script in the app's source code.
-- Integrated third-party proto-files used by Cosmos SDK modules into Starport CLI
+- Chain state persistence between `tinyport serve` launches
+- Integrated Stargate app's `scripts/protocgen` into Tinyport as a native feature. Running `tinyport build/serve` will automatically take care of building proto files without a need of script in the app's source code.
+- Integrated third-party proto-files used by Cosmos SDK modules into Tinyport CLI
 - Added ability to customize binary name with `build.binary` in `config.yml`
 - Added ability to change path to home directory with `
 .home` in `config.yml`
 - Added ability to add accounts by `address` with in `config.yml`
 - Added faucet functionality available on port 4500 and configurable with `faucet` in `config.yml`
-- Added `starport faucet [address] [coins]` command
+- Added `tinyport faucet [address] [coins]` command
 - Updated scaffold to Cosmos SDK v0.41.0
-- Distroless multiplatform docker containers for starport that can be used for `starport serve`
-- UI containers for chains scaffolded with Starport
+- Distroless multiplatform docker containers for tinyport that can be used for `tinyport serve`
+- UI containers for chains scaffolded with Tinyport
 - Use SOS-lite and Docker instead of systemD
 - Arch PKGBUILD in `scripts`
 
@@ -242,7 +242,7 @@
 
 ### Features
 
-- Added `starport network` commands for launching blockchains
+- Added `tinyport network` commands for launching blockchains
 - Added proxy (Chisel) to support launching blockchains from Gitpod
 - Upgraded the template (Stargate) to Cosmos SDK v0.40.0-rc3
 - Added a gRPC-Web proxy that is available under http://localhost:12345/grpc
@@ -260,7 +260,7 @@
 - Evaluate `--address-prefix` option when scaffolding for Stargate
 - Use a deterministic method to generate scaffolded type IDs
 - Modify scaffolded type's creator type from address to string
-- Copy built starport arm64 binary from tendermintdevelopment/starport:arm64 for device images
+- Copy built tinyport arm64 binary from tendermintdevelopment/tinyport:arm64 for device images
 - Added git to amd64 docker image
 - Comment out Gaia's seeds in the systemd unit template for downstream chains
 
@@ -269,9 +269,9 @@
 ### Features
 
 - Added Github CLI to gitpod environment for greater ease of use
-- Added `starport build` command to build and install app binaries
-- Improved the first-time experience for readers of the Starport readme and parts of the Starport Handbook
-- Added `starport module create` command to scaffold custom modules
+- Added `tinyport build` command to build and install app binaries
+- Improved the first-time experience for readers of the Tinyport readme and parts of the Tinyport Handbook
+- Added `tinyport module create` command to scaffold custom modules
 - Raspberry Pi now installs, builds, and serves the Vue UI
 - Improved documentation for Raspberry Pi Device Images
 - Added IBC and some other modules
@@ -282,7 +282,7 @@
 - `--address-prefix` will always be translated to lowercase while scaffolding with `app` command
 - HTTP API: accept strings in JSON and cast them to int and bool
 - Update @tendermint/vue to `v0.1.7`
-- Removed "Starport Pi"
+- Removed "Tinyport Pi"
 - Removed Makefile from Downstream Pi
 - Fixed Downstream Pi image Github Action
 - Prevent duplicated fields with `type` command
@@ -299,9 +299,9 @@
 
 ### Features
 
-- Added experimental [Stargate](https://stargate.cosmos.network/) scaffolding option with `--sdk-version stargate` flag on `starport app` command
-- Pi Image Generation for chains generated with Starport
-- Github action with capture of binary artifacts for chains generated with Starport
+- Added experimental [Stargate](https://stargate.cosmos.network/) scaffolding option with `--sdk-version stargate` flag on `tinyport app` command
+- Pi Image Generation for chains generated with Tinyport
+- Github action with capture of binary artifacts for chains generated with Tinyport
 - Gitpod: added guidelines and changed working directory into `docs`
 - Updated web scaffold with an improved sign in, balance list and a simple wallet
 - Added CRUD actions for scaffolded types: delete, update, and get
@@ -314,13 +314,13 @@
 - OS Image Generation for Raspberry Pi 3 and 4
 - Added `version` command
 - Added support for _validator_ configuration in _config.yml_.
-- Starport can be launched on Gitpod
+- Tinyport can be launched on Gitpod
 - Added `make clean`
 
 ### Fixes
 
 - Compile with go1.15
-- Running `starport add type...` multiple times no longer breaks the app
+- Running `tinyport add type...` multiple times no longer breaks the app
 - Running `appcli tx app create-x` now checks for all required args
 - Removed unused `--denom` flag from the `app` command. It previously has moved as a prop to the `config.yml` under `accounts` section
 - Disabled proxy server in the Vue app (this was causing to some compatibilitiy issues) and enabled CORS for `appcli rest-server` instead
@@ -343,16 +343,16 @@
 ### Fixes
 
 - No longer crashes when git is initialized but doesn't have commits
-- Failure to start the frontend doesn't prevent Starport from running
+- Failure to start the frontend doesn't prevent Tinyport from running
 - Changes to `config.yml` trigger reinitialization of the app
-- Running `starport add wasm` multiple times no longer breaks the app
+- Running `tinyport add wasm` multiple times no longer breaks the app
 
 ## `v0.0.10-rc.X`
 
 ### Features
 
 - Initialize with accounts defined `config.yml`
-- `starport serve --verbose` shows detailed output from every process
+- `tinyport serve --verbose` shows detailed output from every process
 - Custom address prefixes with `--address-prefix` flag
 - Cosmos SDK Launchpad support
 - Rebuild and reinitialize on file change

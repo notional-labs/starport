@@ -1,6 +1,6 @@
-# Contributing to Starport docs
+# Contributing to Tinyport docs
 
-- [Contributing to Starport docs](#contributing-to-starport-docs)
+- [Contributing to Tinyport docs](#contributing-to-tinyport-docs)
   - [Using this repo](#using-this-repo)
   - [Reviewing technical content PRs](#reviewing-technical-content-prs)
   - [Writing and contributing](#writing-and-contributing)
@@ -16,7 +16,7 @@ To set up your environment for success, follow the [technical setup](technical-s
 
 ## Using this repo
 
-Review existing [Starport issues](https://github.com/tendermint/starport/issues) to see if your question has already been asked and answered.
+Review existing [Tinyport issues](https://github.com/notional-labs/tinyport/issues) to see if your question has already been asked and answered.
 
 - To provide feedback, file an issue and provide generous details to help us understand how we can make it better.
 - To provide a fix, make a direct contribution. If you're not a member or maintainer, fork the repo and then submit a pull request (PR) from your forked repo to the `develop` branch.
@@ -54,9 +54,9 @@ Other useful resources:
 
 Technical content includes knowledge base articles and interactive tutorials. 
  
-- Starport Developer Tutorials content is in the `docs/guide` folder. 
+- Tinyport Developer Tutorials content is in the `docs/guide` folder. 
 - Knowledge Base content is in the `docs/kb` folder. 
-- Migration content for required action steps required for upgrades to new Starport versions is in the `docs/migration` folder.
+- Migration content for required action steps required for upgrades to new Tinyport versions is in the `docs/migration` folder.
 
 Locations and folders for other content can vary. Explore the self-describing folders for the content that you are interested in. Some articles and tutorials reside in a single Markdown file while sub-folders might be present for other tutorials.
 
@@ -64,11 +64,11 @@ As always, work-in-progress content might be happening in other locations and re
 
 ## Who works on the tutorials?
 
-The Tendermint (All in Bits) Developer Experience team is focused on building Starport and developing tutorials.
+The Tendermint (All in Bits) Developer Experience team is focused on building Tinyport and developing tutorials.
 
 The Tendermint (All in Bits) Ecosystem Development team owns the technical content and tutorials and manages developer onboarding.
 
-Meet the [people behind Starport and contributors](https://github.com/tendermint/starport/graphs/contributors).
+Meet the [people behind Tinyport and contributors](https://github.com/notional-labs/tinyport/graphs/contributors).
 
 ## Viewing tutorial builds
 
@@ -93,8 +93,8 @@ Since the deploy preview doesn't work on Draft PRs, follow these steps to previe
 
     ```bash
     cd ~/github
-    git clone https://github.com/tendermint/starport
-    cd starport
+    git clone https://github.com/notional-labs/tinyport
+    cd tinyport
     cd docs
     ```
 

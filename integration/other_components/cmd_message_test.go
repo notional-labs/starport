@@ -7,8 +7,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	envtest "github.com/tendermint/starport/integration"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
+	envtest "github.com/notional-labs/tinyport/integration"
+	"github.com/notional-labs/tinyport/tinyport/pkg/cmdrunner/step"
 )
 
 func TestGenerateAnAppWithMessage(t *testing.T) {
@@ -20,7 +20,7 @@ func TestGenerateAnAppWithMessage(t *testing.T) {
 	env.Must(env.Exec("create a message",
 		step.NewSteps(step.New(
 			step.Exec(
-				"starport",
+				"tinyport",
 				"s",
 				"message",
 				"do-foo",
@@ -37,7 +37,7 @@ func TestGenerateAnAppWithMessage(t *testing.T) {
 	env.Must(env.Exec("create a message with custom path",
 		step.NewSteps(step.New(
 			step.Exec(
-				"starport",
+				"tinyport",
 				"s",
 				"message",
 				"app-path",
@@ -56,7 +56,7 @@ func TestGenerateAnAppWithMessage(t *testing.T) {
 
 	env.Must(env.Exec("should prevent creating an existing message",
 		step.NewSteps(step.New(
-			step.Exec("starport", "s", "message", "do-foo", "bar"),
+			step.Exec("tinyport", "s", "message", "do-foo", "bar"),
 			step.Workdir(path),
 		)),
 		envtest.ExecShouldError(),
@@ -64,14 +64,14 @@ func TestGenerateAnAppWithMessage(t *testing.T) {
 
 	env.Must(env.Exec("create a message with a custom signer name",
 		step.NewSteps(step.New(
-			step.Exec("starport", "s", "message", "do-bar", "bar", "--signer", "bar-doer"),
+			step.Exec("tinyport", "s", "message", "do-bar", "bar", "--signer", "bar-doer"),
 			step.Workdir(path),
 		)),
 	))
 
 	env.Must(env.Exec("create a custom field type",
 		step.NewSteps(step.New(
-			step.Exec("starport",
+			step.Exec("tinyport",
 				"s",
 				"type",
 				"custom-type",
@@ -94,14 +94,14 @@ func TestGenerateAnAppWithMessage(t *testing.T) {
 
 	env.Must(env.Exec("create a message with the custom field type",
 		step.NewSteps(step.New(
-			step.Exec("starport", "s", "message", "foo-baz", "customField:CustomType"),
+			step.Exec("tinyport", "s", "message", "foo-baz", "customField:CustomType"),
 			step.Workdir(path),
 		)),
 	))
 
 	env.Must(env.Exec("create a module",
 		step.NewSteps(step.New(
-			step.Exec("starport", "s", "module", "foo", "--require-registration"),
+			step.Exec("tinyport", "s", "module", "foo", "--require-registration"),
 			step.Workdir(path),
 		)),
 	))
@@ -109,7 +109,7 @@ func TestGenerateAnAppWithMessage(t *testing.T) {
 	env.Must(env.Exec("create a message in a module",
 		step.NewSteps(step.New(
 			step.Exec(
-				"starport",
+				"tinyport",
 				"s",
 				"message",
 				"do-foo",

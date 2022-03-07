@@ -3,9 +3,9 @@ order: 6
 description: Reference list of supported types. 
 ---
 
-# Starport supported types
+# Tinyport supported types
 
-Types with CRUD operations are scaffolded with the `starport scaffold` command.
+Types with CRUD operations are scaffolded with the `tinyport scaffold` command.
 
 ## Built-in types
 
@@ -27,18 +27,18 @@ Some types cannot be used an index, like the map and list indexes and module par
 
 You can create custom types and then use the custom type later.
 
-For example, you can create a `list` type called `user` and then use the `user` type in a subsequent `starport scaffold` command.
+For example, you can create a `list` type called `user` and then use the `user` type in a subsequent `tinyport scaffold` command.
 
 Here's an example of how to scaffold a new `CoordinatorDescription` type that is reusable in the future:
 
 ```shell
-starport scaffold list coordinator-description description:string --no-message
+tinyport scaffold list coordinator-description description:string --no-message
 ```
 
 Now you can scaffold a message using the `CoordinatorDescription` type:
 
 ```shell
-starport scaffold message add-coordinator address:string description:CoordinatorDescription
+tinyport scaffold message add-coordinator address:string description:CoordinatorDescription
 ```
 
 Run the chain and then send the message using the CLI.
@@ -46,13 +46,13 @@ Run the chain and then send the message using the CLI.
 To pass the custom type in JSON format:
 
 ```shell
-starport chain serve
+tinyport chain serve
 marsd tx mars add-coordinator cosmos1t4jkut0yfnsmqle9vxk3adfwwm9vj9gsj98vqf '{"description":"coordinator description"}' true --from alice --chain-id mars
 ```
 
 If you try to use a type that is not created yet, the follow error occurs:
 
 ```shell
-starport scaffold message validator validator:ValidatorDescription address:string
+tinyport scaffold message validator validator:ValidatorDescription address:string
 -> the field type ValidatorDescription doesn't exist
 ```

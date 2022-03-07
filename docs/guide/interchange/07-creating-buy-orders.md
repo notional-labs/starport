@@ -19,10 +19,10 @@ message BuyOrderPacketData {
 }
 ```
 
-Now, use Starport CLI to build the proto files for the `send-buy-order` command. You used this command in previous chapters. 
+Now, use Tinyport CLI to build the proto files for the `send-buy-order` command. You used this command in previous chapters. 
 
 ```bash
-starport generate proto-go
+tinyport generate proto-go
 ```
 
 ## IBC Message Handling in SendBuyOrder

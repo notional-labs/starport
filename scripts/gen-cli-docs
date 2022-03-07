@@ -1,3 +1,3 @@
 #!/bin/bash
 
-go run starport/internal/tools/gen-cli-docs/*.go --out docs/cli/index.md
+go run tinyport/internal/tools/gen-cli-docs/*.go --out docs/cli/index.md

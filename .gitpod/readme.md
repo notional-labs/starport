@@ -1,34 +1,34 @@
-# Welcome to Starport ✨
+# Welcome to Tinyport ✨
 
-Starport is an easy-to-use CLI tool for creating sovereign blockchains. Blockchains created with Starport use Cosmos SDK, the world's most widely used blockchain application framework.
+Tinyport is an easy-to-use CLI tool for creating sovereign blockchains. Blockchains created with Tinyport use Cosmos SDK, the world's most widely used blockchain application framework.
 
-In this browser-based development environment, the terminal window is in the lower part of the window. The `starport` binary is pre-installed and ready to use on the command line.
+In this browser-based development environment, the terminal window is in the lower part of the window. The `tinyport` binary is pre-installed and ready to use on the command line.
 
 ## Quick start
 
 To create a blockchain and start a node in development:
 
 ```
-starport scaffold chain github.com/cosmonaut/mars
+tinyport scaffold chain github.com/cosmonaut/mars
 
 cd mars
 
-starport chain serve
+tinyport chain serve
 ```
 
 ## Next steps
 
-📺 **[Introduction to Starport](https://www.youtube.com/watch?v=5RqAIE0b8Kw)**: Watch an introductory video to learn about Starport.
+📺 **[Introduction to Tinyport](https://www.youtube.com/watch?v=5RqAIE0b8Kw)**: Watch an introductory video to learn about Tinyport.
 
-🧑‍🏫 **[Developer Guide](https://docs.starport.network/guide/)**: Learn by building a simple IBC-enabled module, nameservice, or a decentralized exchange (DEX).
+🧑‍🏫 **[Developer Guide](https://docs.tinyport.network/guide/)**: Learn by building a simple IBC-enabled module, nameservice, or a decentralized exchange (DEX).
 
-📕 **[Starport Documentation](https://docs.starport.network)**: Explore the features of Starport.
+📕 **[Tinyport Documentation](https://docs.tinyport.network)**: Explore the features of Tinyport.
 
 📚 [Cosmos SDK Documentation](https://docs.cosmos.network): Learn about the framework for building application-specific blockchains.
 
-⭐️ [Starport on Github](https://github.com/tendermint/starport): Submit an issue or contribute to the source code.
+⭐️ [Tinyport on Github](https://github.com/notional-labs/tinyport): Submit an issue or contribute to the source code.
 
-## Starport features
+## Tinyport features
 
 * Scaffold modules, messages, types with CRUD operations, IBC packets, and more
 * Start a blockchain node in development with live reloading
@@ -36,14 +36,14 @@ starport chain serve
 * Use automatically generated TypeScript/Vuex clients to interact with your blockchain
 * Use the Vue.js web app template with a set of components and Vuex modules
 
-## Install Starport locally
+## Install Tinyport locally
 
 ```
-curl https://get.starport.network/starport! | bash
+curl https://get.tinyport.network/tinyport! | bash
 ```
 
-The latest `starport` binary is downloaded from the Github repo and installed in `/usr/local/bin`. Learn more about [installing Starport](https://docs.starport.network/guide/install.html).
+The latest `tinyport` binary is downloaded from the Github repo and installed in `/usr/local/bin`. Learn more about [installing Tinyport](https://docs.tinyport.network/guide/install.html).
 
 ## Stay in touch
 
-Starport is a free and open source product maintained by [Tendermint](https://tendermint.com). Follow us on [Twitter](https://twitter.com/starportHQ) and [Medium](https://medium.com/tendermint) to get the latest updates!
+Tinyport is a free and open source product maintained by [Tendermint](https://tendermint.com). Follow us on [Twitter](https://twitter.com/starportHQ) and [Medium](https://medium.com/tendermint) to get the latest updates!

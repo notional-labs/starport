@@ -1,6 +1,6 @@
 ---
 order: 1
-description: Starport CLI docs. 
+description: Tinyport CLI docs. 
 parent:
   order: 8
   title: CLI Reference
@@ -8,48 +8,48 @@ parent:
 
 # CLI Reference
 
-Documentation for Starport CLI.
+Documentation for Tinyport CLI.
 
-## starport
+## tinyport
 
-Starport offers everything you need to scaffold, test, build, and launch your blockchain
+Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
 
 **Synopsis**
 
-Starport is a tool for creating sovereign blockchains built with Cosmos SDK, the world’s
-most popular modular blockchain framework. Starport offers everything you need to scaffold,
+Tinyport is a tool for creating sovereign blockchains built with Cosmos SDK, the world’s
+most popular modular blockchain framework. Tinyport offers everything you need to scaffold,
 test, build, and launch your blockchain.
 
 To get started, create a blockchain:
 
-starport scaffold chain github.com/cosmonaut/mars
+tinyport scaffold chain github.com/cosmonaut/mars
 
 **Options**
 
 ```
-  -h, --help   help for starport
+  -h, --help   help for tinyport
 ```
 
 **SEE ALSO**
 
-* [starport account](#starport-account)	 - Commands for managing accounts
-* [starport chain](#starport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
-* [starport docs](#starport-docs)	 - Show Starport docs
-* [starport generate](#starport-generate)	 - Generate clients, API docs from source code
-* [starport relayer](#starport-relayer)	 - Connect blockchains by using IBC protocol
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
-* [starport tools](#starport-tools)	 - Tools for advanced users
-* [starport version](#starport-version)	 - Print the current build information
+* [tinyport account](#tinyport-account)	 - Commands for managing accounts
+* [tinyport chain](#tinyport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
+* [tinyport docs](#tinyport-docs)	 - Show Tinyport docs
+* [tinyport generate](#tinyport-generate)	 - Generate clients, API docs from source code
+* [tinyport relayer](#tinyport-relayer)	 - Connect blockchains by using IBC protocol
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport tools](#tinyport-tools)	 - Tools for advanced users
+* [tinyport version](#tinyport-version)	 - Print the current build information
 
 
-## starport account
+## tinyport account
 
 Commands for managing accounts
 
 **Synopsis**
 
 Commands for managing accounts. An account is a pair of a private key and a public key.
-Starport uses accounts to interact with the Starport Network blockchain, use an IBC relayer, and more.
+Tinyport uses accounts to interact with the Tinyport Network blockchain, use an IBC relayer, and more.
 
 **Options**
 
@@ -59,21 +59,21 @@ Starport uses accounts to interact with the Starport Network blockchain, use an 
 
 **SEE ALSO**
 
-* [starport](#starport)	 - Starport offers everything you need to scaffold, test, build, and launch your blockchain
-* [starport account create](#starport-account-create)	 - Create a new account
-* [starport account delete](#starport-account-delete)	 - Delete an account by name
-* [starport account export](#starport-account-export)	 - Export an account as a private key
-* [starport account import](#starport-account-import)	 - Import an account by using a mnemonic or a private key
-* [starport account list](#starport-account-list)	 - Show a list of all accounts
-* [starport account show](#starport-account-show)	 - Show detailed information about a particular account
+* [tinyport](#tinyport)	 - Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
+* [tinyport account create](#tinyport-account-create)	 - Create a new account
+* [tinyport account delete](#tinyport-account-delete)	 - Delete an account by name
+* [tinyport account export](#tinyport-account-export)	 - Export an account as a private key
+* [tinyport account import](#tinyport-account-import)	 - Import an account by using a mnemonic or a private key
+* [tinyport account list](#tinyport-account-list)	 - Show a list of all accounts
+* [tinyport account show](#tinyport-account-show)	 - Show detailed information about a particular account
 
 
-## starport account create
+## tinyport account create
 
 Create a new account
 
 ```
-starport account create [name] [flags]
+tinyport account create [name] [flags]
 ```
 
 **Options**
@@ -85,15 +85,15 @@ starport account create [name] [flags]
 
 **SEE ALSO**
 
-* [starport account](#starport-account)	 - Commands for managing accounts
+* [tinyport account](#tinyport-account)	 - Commands for managing accounts
 
 
-## starport account delete
+## tinyport account delete
 
 Delete an account by name
 
 ```
-starport account delete [name] [flags]
+tinyport account delete [name] [flags]
 ```
 
 **Options**
@@ -105,15 +105,15 @@ starport account delete [name] [flags]
 
 **SEE ALSO**
 
-* [starport account](#starport-account)	 - Commands for managing accounts
+* [tinyport account](#tinyport-account)	 - Commands for managing accounts
 
 
-## starport account export
+## tinyport account export
 
 Export an account as a private key
 
 ```
-starport account export [name] [flags]
+tinyport account export [name] [flags]
 ```
 
 **Options**
@@ -128,15 +128,15 @@ starport account export [name] [flags]
 
 **SEE ALSO**
 
-* [starport account](#starport-account)	 - Commands for managing accounts
+* [tinyport account](#tinyport-account)	 - Commands for managing accounts
 
 
-## starport account import
+## tinyport account import
 
 Import an account by using a mnemonic or a private key
 
 ```
-starport account import [name] [flags]
+tinyport account import [name] [flags]
 ```
 
 **Options**
@@ -151,15 +151,15 @@ starport account import [name] [flags]
 
 **SEE ALSO**
 
-* [starport account](#starport-account)	 - Commands for managing accounts
+* [tinyport account](#tinyport-account)	 - Commands for managing accounts
 
 
-## starport account list
+## tinyport account list
 
 Show a list of all accounts
 
 ```
-starport account list [flags]
+tinyport account list [flags]
 ```
 
 **Options**
@@ -172,15 +172,15 @@ starport account list [flags]
 
 **SEE ALSO**
 
-* [starport account](#starport-account)	 - Commands for managing accounts
+* [tinyport account](#tinyport-account)	 - Commands for managing accounts
 
 
-## starport account show
+## tinyport account show
 
 Show detailed information about a particular account
 
 ```
-starport account show [name] [flags]
+tinyport account show [name] [flags]
 ```
 
 **Options**
@@ -193,10 +193,10 @@ starport account show [name] [flags]
 
 **SEE ALSO**
 
-* [starport account](#starport-account)	 - Commands for managing accounts
+* [tinyport account](#tinyport-account)	 - Commands for managing accounts
 
 
-## starport chain
+## tinyport chain
 
 Build, initialize and start a blockchain node or perform other actions on the blockchain
 
@@ -213,14 +213,14 @@ Build, initialize and start a blockchain node or perform other actions on the bl
 
 **SEE ALSO**
 
-* [starport](#starport)	 - Starport offers everything you need to scaffold, test, build, and launch your blockchain
-* [starport chain build](#starport-chain-build)	 - Build a node binary
-* [starport chain faucet](#starport-chain-faucet)	 - Send coins to an account
-* [starport chain init](#starport-chain-init)	 - Initialize your chain
-* [starport chain serve](#starport-chain-serve)	 - Start a blockchain node in development
+* [tinyport](#tinyport)	 - Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
+* [tinyport chain build](#tinyport-chain-build)	 - Build a node binary
+* [tinyport chain faucet](#tinyport-chain-faucet)	 - Send coins to an account
+* [tinyport chain init](#tinyport-chain-init)	 - Initialize your chain
+* [tinyport chain serve](#tinyport-chain-serve)	 - Start a blockchain node in development
 
 
-## starport chain build
+## tinyport chain build
 
 Build a node binary
 
@@ -235,11 +235,11 @@ source. Specify the release targets with GOOS:GOARCH build tags.
 If the optional --release.targets is not specified, a binary is created for your current environment.
 
 Sample usages:
-	- starport chain build
-	- starport chain build --release -t linux:amd64 -t darwin:amd64 -t darwin:arm64
+	- tinyport chain build
+	- tinyport chain build --release -t linux:amd64 -t darwin:amd64 -t darwin:arm64
 
 ```
-starport chain build [flags]
+tinyport chain build [flags]
 ```
 
 **Options**
@@ -263,15 +263,15 @@ starport chain build [flags]
 
 **SEE ALSO**
 
-* [starport chain](#starport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
+* [tinyport chain](#tinyport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
 
 
-## starport chain faucet
+## tinyport chain faucet
 
 Send coins to an account
 
 ```
-starport chain faucet [address] [coin<,...>] [flags]
+tinyport chain faucet [address] [coin<,...>] [flags]
 ```
 
 **Options**
@@ -290,15 +290,15 @@ starport chain faucet [address] [coin<,...>] [flags]
 
 **SEE ALSO**
 
-* [starport chain](#starport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
+* [tinyport chain](#tinyport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
 
 
-## starport chain init
+## tinyport chain init
 
 Initialize your chain
 
 ```
-starport chain init [flags]
+tinyport chain init [flags]
 ```
 
 **Options**
@@ -316,10 +316,10 @@ starport chain init [flags]
 
 **SEE ALSO**
 
-* [starport chain](#starport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
+* [tinyport chain](#tinyport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
 
 
-## starport chain serve
+## tinyport chain serve
 
 Start a blockchain node in development
 
@@ -328,13 +328,13 @@ Start a blockchain node in development
 Start a blockchain node with automatic reloading
 
 ```
-starport chain serve [flags]
+tinyport chain serve [flags]
 ```
 
 **Options**
 
 ```
-  -c, --config string       Starport config file (default: ./config.yml)
+  -c, --config string       Tinyport config file (default: ./config.yml)
   -f, --force-reset         Force reset of the app state on start and every source change
   -h, --help                help for serve
       --home string         Home directory used for blockchains
@@ -351,15 +351,15 @@ starport chain serve [flags]
 
 **SEE ALSO**
 
-* [starport chain](#starport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
+* [tinyport chain](#tinyport-chain)	 - Build, initialize and start a blockchain node or perform other actions on the blockchain
 
 
-## starport docs
+## tinyport docs
 
-Show Starport docs
+Show Tinyport docs
 
 ```
-starport docs [flags]
+tinyport docs [flags]
 ```
 
 **Options**
@@ -370,10 +370,10 @@ starport docs [flags]
 
 **SEE ALSO**
 
-* [starport](#starport)	 - Starport offers everything you need to scaffold, test, build, and launch your blockchain
+* [tinyport](#tinyport)	 - Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
 
 
-## starport generate
+## tinyport generate
 
 Generate clients, API docs from source code
 
@@ -394,18 +394,18 @@ Produced source code can be regenerated by running a command again and is not me
 
 **SEE ALSO**
 
-* [starport](#starport)	 - Starport offers everything you need to scaffold, test, build, and launch your blockchain
-* [starport generate openapi](#starport-generate-openapi)	 - Generate generates an OpenAPI spec for your chain from your config.yml
-* [starport generate proto-go](#starport-generate-proto-go)	 - Generate proto based Go code needed for the app's source code
-* [starport generate vuex](#starport-generate-vuex)	 - Generate Vuex store for you chain's frontend from your config.yml
+* [tinyport](#tinyport)	 - Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
+* [tinyport generate openapi](#tinyport-generate-openapi)	 - Generate generates an OpenAPI spec for your chain from your config.yml
+* [tinyport generate proto-go](#tinyport-generate-proto-go)	 - Generate proto based Go code needed for the app's source code
+* [tinyport generate vuex](#tinyport-generate-vuex)	 - Generate Vuex store for you chain's frontend from your config.yml
 
 
-## starport generate openapi
+## tinyport generate openapi
 
 Generate generates an OpenAPI spec for your chain from your config.yml
 
 ```
-starport generate openapi [flags]
+tinyport generate openapi [flags]
 ```
 
 **Options**
@@ -422,15 +422,15 @@ starport generate openapi [flags]
 
 **SEE ALSO**
 
-* [starport generate](#starport-generate)	 - Generate clients, API docs from source code
+* [tinyport generate](#tinyport-generate)	 - Generate clients, API docs from source code
 
 
-## starport generate proto-go
+## tinyport generate proto-go
 
 Generate proto based Go code needed for the app's source code
 
 ```
-starport generate proto-go [flags]
+tinyport generate proto-go [flags]
 ```
 
 **Options**
@@ -447,15 +447,15 @@ starport generate proto-go [flags]
 
 **SEE ALSO**
 
-* [starport generate](#starport-generate)	 - Generate clients, API docs from source code
+* [tinyport generate](#tinyport-generate)	 - Generate clients, API docs from source code
 
 
-## starport generate vuex
+## tinyport generate vuex
 
 Generate Vuex store for you chain's frontend from your config.yml
 
 ```
-starport generate vuex [flags]
+tinyport generate vuex [flags]
 ```
 
 **Options**
@@ -473,10 +473,10 @@ starport generate vuex [flags]
 
 **SEE ALSO**
 
-* [starport generate](#starport-generate)	 - Generate clients, API docs from source code
+* [tinyport generate](#tinyport-generate)	 - Generate clients, API docs from source code
 
 
-## starport relayer
+## tinyport relayer
 
 Connect blockchains by using IBC protocol
 
@@ -488,17 +488,17 @@ Connect blockchains by using IBC protocol
 
 **SEE ALSO**
 
-* [starport](#starport)	 - Starport offers everything you need to scaffold, test, build, and launch your blockchain
-* [starport relayer configure](#starport-relayer-configure)	 - Configure source and target chains for relaying
-* [starport relayer connect](#starport-relayer-connect)	 - Link chains associated with paths and start relaying tx packets in between
+* [tinyport](#tinyport)	 - Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
+* [tinyport relayer configure](#tinyport-relayer-configure)	 - Configure source and target chains for relaying
+* [tinyport relayer connect](#tinyport-relayer-connect)	 - Link chains associated with paths and start relaying tx packets in between
 
 
-## starport relayer configure
+## tinyport relayer configure
 
 Configure source and target chains for relaying
 
 ```
-starport relayer configure [flags]
+tinyport relayer configure [flags]
 ```
 
 **Options**
@@ -528,15 +528,15 @@ starport relayer configure [flags]
 
 **SEE ALSO**
 
-* [starport relayer](#starport-relayer)	 - Connect blockchains by using IBC protocol
+* [tinyport relayer](#tinyport-relayer)	 - Connect blockchains by using IBC protocol
 
 
-## starport relayer connect
+## tinyport relayer connect
 
 Link chains associated with paths and start relaying tx packets in between
 
 ```
-starport relayer connect [<path>,...] [flags]
+tinyport relayer connect [<path>,...] [flags]
 ```
 
 **Options**
@@ -548,10 +548,10 @@ starport relayer connect [<path>,...] [flags]
 
 **SEE ALSO**
 
-* [starport relayer](#starport-relayer)	 - Connect blockchains by using IBC protocol
+* [tinyport relayer](#tinyport-relayer)	 - Connect blockchains by using IBC protocol
 
 
-## starport scaffold
+## tinyport scaffold
 
 Scaffold a new blockchain, module, message, query, and more
 
@@ -569,21 +569,21 @@ CRUD stands for "create, read, update, delete".
 
 **SEE ALSO**
 
-* [starport](#starport)	 - Starport offers everything you need to scaffold, test, build, and launch your blockchain
-* [starport scaffold band](#starport-scaffold-band)	 - Scaffold an IBC BandChain query oracle to request real-time data
-* [starport scaffold chain](#starport-scaffold-chain)	 - Fully-featured Cosmos SDK blockchain
-* [starport scaffold list](#starport-scaffold-list)	 - CRUD for data stored as an array
-* [starport scaffold map](#starport-scaffold-map)	 - CRUD for data stored as key-value pairs
-* [starport scaffold message](#starport-scaffold-message)	 - Message to perform state transition on the blockchain
-* [starport scaffold module](#starport-scaffold-module)	 - Scaffold a Cosmos SDK module
-* [starport scaffold packet](#starport-scaffold-packet)	 - Message for sending an IBC packet
-* [starport scaffold query](#starport-scaffold-query)	 - Query to get data from the blockchain
-* [starport scaffold single](#starport-scaffold-single)	 - CRUD for data stored in a single location
-* [starport scaffold type](#starport-scaffold-type)	 - Scaffold only a type definition
-* [starport scaffold vue](#starport-scaffold-vue)	 - Vue 3 web app template
+* [tinyport](#tinyport)	 - Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
+* [tinyport scaffold band](#tinyport-scaffold-band)	 - Scaffold an IBC BandChain query oracle to request real-time data
+* [tinyport scaffold chain](#tinyport-scaffold-chain)	 - Fully-featured Cosmos SDK blockchain
+* [tinyport scaffold list](#tinyport-scaffold-list)	 - CRUD for data stored as an array
+* [tinyport scaffold map](#tinyport-scaffold-map)	 - CRUD for data stored as key-value pairs
+* [tinyport scaffold message](#tinyport-scaffold-message)	 - Message to perform state transition on the blockchain
+* [tinyport scaffold module](#tinyport-scaffold-module)	 - Scaffold a Cosmos SDK module
+* [tinyport scaffold packet](#tinyport-scaffold-packet)	 - Message for sending an IBC packet
+* [tinyport scaffold query](#tinyport-scaffold-query)	 - Query to get data from the blockchain
+* [tinyport scaffold single](#tinyport-scaffold-single)	 - CRUD for data stored in a single location
+* [tinyport scaffold type](#tinyport-scaffold-type)	 - Scaffold only a type definition
+* [tinyport scaffold vue](#tinyport-scaffold-vue)	 - Vue 3 web app template
 
 
-## starport scaffold band
+## tinyport scaffold band
 
 Scaffold an IBC BandChain query oracle to request real-time data
 
@@ -592,7 +592,7 @@ Scaffold an IBC BandChain query oracle to request real-time data
 Scaffold an IBC BandChain query oracle to request real-time data from BandChain scripts in a specific IBC-enabled Cosmos SDK module
 
 ```
-starport scaffold band [queryName] --module [moduleName] [flags]
+tinyport scaffold band [queryName] --module [moduleName] [flags]
 ```
 
 **Options**
@@ -606,10 +606,10 @@ starport scaffold band [queryName] --module [moduleName] [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold chain
+## tinyport scaffold chain
 
 Fully-featured Cosmos SDK blockchain
 
@@ -618,7 +618,7 @@ Fully-featured Cosmos SDK blockchain
 Scaffold a new Cosmos SDK blockchain with a default directory structure
 
 ```
-starport scaffold chain [github.com/org/repo] [flags]
+tinyport scaffold chain [github.com/org/repo] [flags]
 ```
 
 **Options**
@@ -632,15 +632,15 @@ starport scaffold chain [github.com/org/repo] [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold list
+## tinyport scaffold list
 
 CRUD for data stored as an array
 
 ```
-starport scaffold list NAME [field]... [flags]
+tinyport scaffold list NAME [field]... [flags]
 ```
 
 **Options**
@@ -655,15 +655,15 @@ starport scaffold list NAME [field]... [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold map
+## tinyport scaffold map
 
 CRUD for data stored as key-value pairs
 
 ```
-starport scaffold map NAME [field]... [flags]
+tinyport scaffold map NAME [field]... [flags]
 ```
 
 **Options**
@@ -679,15 +679,15 @@ starport scaffold map NAME [field]... [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold message
+## tinyport scaffold message
 
 Message to perform state transition on the blockchain
 
 ```
-starport scaffold message [name] [field1] [field2] ... [flags]
+tinyport scaffold message [name] [field1] [field2] ... [flags]
 ```
 
 **Options**
@@ -703,10 +703,10 @@ starport scaffold message [name] [field1] [field2] ... [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold module
+## tinyport scaffold module
 
 Scaffold a Cosmos SDK module
 
@@ -715,7 +715,7 @@ Scaffold a Cosmos SDK module
 Scaffold a new Cosmos SDK module in the `x` directory
 
 ```
-starport scaffold module [name] [flags]
+tinyport scaffold module [name] [flags]
 ```
 
 **Options**
@@ -731,10 +731,10 @@ starport scaffold module [name] [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold packet
+## tinyport scaffold packet
 
 Message for sending an IBC packet
 
@@ -743,7 +743,7 @@ Message for sending an IBC packet
 Scaffold an IBC packet in a specific IBC-enabled Cosmos SDK module
 
 ```
-starport scaffold packet [packetName] [field1] [field2] ... --module [moduleName] [flags]
+tinyport scaffold packet [packetName] [field1] [field2] ... --module [moduleName] [flags]
 ```
 
 **Options**
@@ -759,15 +759,15 @@ starport scaffold packet [packetName] [field1] [field2] ... --module [moduleName
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold query
+## tinyport scaffold query
 
 Query to get data from the blockchain
 
 ```
-starport scaffold query [name] [request_field1] [request_field2] ... [flags]
+tinyport scaffold query [name] [request_field1] [request_field2] ... [flags]
 ```
 
 **Options**
@@ -783,15 +783,15 @@ starport scaffold query [name] [request_field1] [request_field2] ... [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold single
+## tinyport scaffold single
 
 CRUD for data stored in a single location
 
 ```
-starport scaffold single NAME [field]... [flags]
+tinyport scaffold single NAME [field]... [flags]
 ```
 
 **Options**
@@ -806,15 +806,15 @@ starport scaffold single NAME [field]... [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold type
+## tinyport scaffold type
 
 Scaffold only a type definition
 
 ```
-starport scaffold type NAME [field]... [flags]
+tinyport scaffold type NAME [field]... [flags]
 ```
 
 **Options**
@@ -829,15 +829,15 @@ starport scaffold type NAME [field]... [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport scaffold vue
+## tinyport scaffold vue
 
 Vue 3 web app template
 
 ```
-starport scaffold vue [flags]
+tinyport scaffold vue [flags]
 ```
 
 **Options**
@@ -849,10 +849,10 @@ starport scaffold vue [flags]
 
 **SEE ALSO**
 
-* [starport scaffold](#starport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
+* [tinyport scaffold](#tinyport-scaffold)	 - Scaffold a new blockchain, module, message, query, and more
 
 
-## starport tools
+## tinyport tools
 
 Tools for advanced users
 
@@ -864,14 +864,14 @@ Tools for advanced users
 
 **SEE ALSO**
 
-* [starport](#starport)	 - Starport offers everything you need to scaffold, test, build, and launch your blockchain
-* [starport tools completions](#starport-tools-completions)	 - Generate completions script
-* [starport tools ibc-relayer](#starport-tools-ibc-relayer)	 - Typescript implementation of an IBC relayer
-* [starport tools ibc-setup](#starport-tools-ibc-setup)	 - Collection of commands to quickly setup a relayer
-* [starport tools protoc](#starport-tools-protoc)	 - Execute the protoc command
+* [tinyport](#tinyport)	 - Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
+* [tinyport tools completions](#tinyport-tools-completions)	 - Generate completions script
+* [tinyport tools ibc-relayer](#tinyport-tools-ibc-relayer)	 - Typescript implementation of an IBC relayer
+* [tinyport tools ibc-setup](#tinyport-tools-ibc-setup)	 - Collection of commands to quickly setup a relayer
+* [tinyport tools protoc](#tinyport-tools-protoc)	 - Execute the protoc command
 
 
-## starport tools completions
+## tinyport tools completions
 
 Generate completions script
 
@@ -884,15 +884,15 @@ Generate completions script
 
 Bash:
 
-  $ source <(starport  tools completions bash)
+  $ source <(tinyport  tools completions bash)
 
   To load completions for every new session, run:
 
   ** Linux **
-  $ starport  tools completions bash > /etc/bash_completion.d/starport
+  $ tinyport  tools completions bash > /etc/bash_completion.d/tinyport
 
   ** macOS **
-  $ starport  tools completions bash > /usr/local/etc/bash_completion.d/starport
+  $ tinyport  tools completions bash > /usr/local/etc/bash_completion.d/tinyport
 
 Zsh:
 
@@ -902,31 +902,31 @@ Zsh:
 
   To load completions for each session, execute once:
   
-  $ starport  tools completions zsh > "${fpath[1]}/_starport"
+  $ tinyport  tools completions zsh > "${fpath[1]}/_starport"
 
   You will need to start a new shell for this setup to take effect.
 
 fish:
 
-  $ starport  tools completions fish | source
+  $ tinyport  tools completions fish | source
 
   To load completions for each session, execute once:
   
-  $ starport  tools completions fish > ~/.config/fish/completionss/starport.fish
+  $ tinyport  tools completions fish > ~/.config/fish/completionss/tinyport.fish
 
 PowerShell:
 
-  PS> starport  tools completions powershell | Out-String | Invoke-Expression
+  PS> tinyport  tools completions powershell | Out-String | Invoke-Expression
 
   To load completions for every new session, run:
   
-  PS> starport  tools completions powershell > starport.ps1
+  PS> tinyport  tools completions powershell > tinyport.ps1
   
   and source this file from your PowerShell profile.
 
 
 ```
-starport tools completions
+tinyport tools completions
 ```
 
 **Options**
@@ -937,21 +937,21 @@ starport tools completions
 
 **SEE ALSO**
 
-* [starport tools](#starport-tools)	 - Tools for advanced users
+* [tinyport tools](#tinyport-tools)	 - Tools for advanced users
 
 
-## starport tools ibc-relayer
+## tinyport tools ibc-relayer
 
 Typescript implementation of an IBC relayer
 
 ```
-starport tools ibc-relayer [--] [...] [flags]
+tinyport tools ibc-relayer [--] [...] [flags]
 ```
 
 **Examples**
 
 ```
-starport tools ibc-relayer -- -h
+tinyport tools ibc-relayer -- -h
 ```
 
 **Options**
@@ -962,22 +962,22 @@ starport tools ibc-relayer -- -h
 
 **SEE ALSO**
 
-* [starport tools](#starport-tools)	 - Tools for advanced users
+* [tinyport tools](#tinyport-tools)	 - Tools for advanced users
 
 
-## starport tools ibc-setup
+## tinyport tools ibc-setup
 
 Collection of commands to quickly setup a relayer
 
 ```
-starport tools ibc-setup [--] [...] [flags]
+tinyport tools ibc-setup [--] [...] [flags]
 ```
 
 **Examples**
 
 ```
-starport tools ibc-setup -- -h
-starport tools ibc-setup -- init --src relayer_test_1 --dest relayer_test_2
+tinyport tools ibc-setup -- -h
+tinyport tools ibc-setup -- init --src relayer_test_1 --dest relayer_test_2
 ```
 
 **Options**
@@ -988,10 +988,10 @@ starport tools ibc-setup -- init --src relayer_test_1 --dest relayer_test_2
 
 **SEE ALSO**
 
-* [starport tools](#starport-tools)	 - Tools for advanced users
+* [tinyport tools](#tinyport-tools)	 - Tools for advanced users
 
 
-## starport tools protoc
+## tinyport tools protoc
 
 Execute the protoc command
 
@@ -1000,13 +1000,13 @@ Execute the protoc command
 The protoc command. You don't need to setup the global protoc include folder with -I, it's automatically handled
 
 ```
-starport tools protoc [--] [...] [flags]
+tinyport tools protoc [--] [...] [flags]
 ```
 
 **Examples**
 
 ```
-starport tools protoc -- --version
+tinyport tools protoc -- --version
 ```
 
 **Options**
@@ -1017,15 +1017,15 @@ starport tools protoc -- --version
 
 **SEE ALSO**
 
-* [starport tools](#starport-tools)	 - Tools for advanced users
+* [tinyport tools](#tinyport-tools)	 - Tools for advanced users
 
 
-## starport version
+## tinyport version
 
 Print the current build information
 
 ```
-starport version [flags]
+tinyport version [flags]
 ```
 
 **Options**
@@ -1036,5 +1036,5 @@ starport version [flags]
 
 **SEE ALSO**
 
-* [starport](#starport)	 - Starport offers everything you need to scaffold, test, build, and launch your blockchain
+* [tinyport](#tinyport)	 - Tinyport offers everything you need to scaffold, test, build, and launch your blockchain
 

@@ -1,5 +1,5 @@
 name: cli 
-description: Starport CLI 
+description: Tinyport CLI 
 runs:
   using: docker
   image: Dockerfile

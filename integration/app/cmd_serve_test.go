@@ -11,8 +11,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	envtest "github.com/tendermint/starport/integration"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
+	envtest "github.com/notional-labs/tinyport/integration"
+	"github.com/notional-labs/tinyport/tinyport/pkg/cmdrunner/step"
 )
 
 func TestServeStargateWithWasm(t *testing.T) {
@@ -26,7 +26,7 @@ func TestServeStargateWithWasm(t *testing.T) {
 
 	env.Must(env.Exec("add Wasm module",
 		step.NewSteps(step.New(
-			step.Exec("starport", "s", "wasm"),
+			step.Exec("tinyport", "s", "wasm"),
 			step.Workdir(apath),
 		)),
 	))

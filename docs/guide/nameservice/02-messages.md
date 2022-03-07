@@ -68,9 +68,9 @@ Now, you are ready to implement these Cosmos SDK messages to achieve the desired
 - `MsgDeleteName`
 	Allow name owners to delete names that belong to them.
 
-Use the `starport scaffold message` command to scaffold new messages for your module. 
+Use the `tinyport scaffold message` command to scaffold new messages for your module. 
 
-- The [`starport scaffold message`](https://docs.starport.com/cli/#starport-scaffold-message) command accepts the message name as the first argument and a list of fields for the message. 
+- The [`tinyport scaffold message`](https://docs.tinyport.com/cli/#tinyport-scaffold-message) command accepts the message name as the first argument and a list of fields for the message. 
 - By default, a message is scaffolded in a module with a name that matches the name of the project, in this case `nameservice`. 
 
 ### Add the MsgBuyName Message
@@ -78,7 +78,7 @@ Use the `starport scaffold message` command to scaffold new messages for your mo
 To create the `MsgBuyName` message for the nameservice module:
 
 ```bash
-starport scaffold message buy-name name bid
+tinyport scaffold message buy-name name bid
 ```
 
 where:
@@ -87,7 +87,7 @@ where:
 - name defines the name that the user can buy, sell, and delete
 - bid is the price the user bids to buy a name 
 
-The `starport scaffold message buy-name name bid` command creates and modifies several files and outputs the changes. You can view the changes in each file:
+The `tinyport scaffold message buy-name name bid` command creates and modifies several files and outputs the changes. You can view the changes in each file:
 
 - modify `proto/nameservice/tx.proto`
 - modify `x/nameservice/client/cli/tx.go`
@@ -107,17 +107,17 @@ The `starport scaffold message buy-name name bid` command creates and modifies s
     syntax = "proto3";
     package cosmonaut.nameservice.nameservice;
 
-    // this line is used by starport scaffolding # proto/tx/import
+    // this line is used by tinyport scaffolding # proto/tx/import
 
     option go_package = "github.com/cosmonaut/nameservice/x/nameservice/types";
 
     // Msg defines the Msg service.
     service Msg {
-    	// this line is used by starport scaffolding # proto/tx/rpc
+    	// this line is used by tinyport scaffolding # proto/tx/rpc
     rpc BuyName(MsgBuyName) returns (MsgBuyNameResponse);
     }
 
-    // this line is used by starport scaffolding # proto/tx/message
+    // this line is used by tinyport scaffolding # proto/tx/message
     message MsgBuyName {
     string creator = 1;
     string name = 2;
@@ -158,7 +158,7 @@ The `starport scaffold message buy-name name bid` command creates and modifies s
 To create the `MsgSetName` for the nameservice module:
 
 ```bash
-starport scaffold message set-name name value
+tinyport scaffold message set-name name value
 ```
 
 where:
@@ -167,7 +167,7 @@ where:
 - name is the name the user sets
 - value is the literal value that the name resolves to
 
-This `starport scaffold message` command modifies and creates the same set of files as the `MsgBuyName` message. 
+This `tinyport scaffold message` command modifies and creates the same set of files as the `MsgBuyName` message. 
 
 ### Add The MsgDeleteName Message
 
@@ -176,7 +176,7 @@ You need a message so that an end user can delete a name that belongs to them.
 To create the `MsgDeleteName` for the nameservice module:
 
 ```bash
-starport scaffold message delete-name name
+tinyport scaffold message delete-name name
 ```
 
 where:

@@ -14,10 +14,10 @@ import (
 	"github.com/stretchr/testify/require"
 	"golang.org/x/sync/errgroup"
 
-	envtest "github.com/tendermint/starport/integration"
-	"github.com/tendermint/starport/starport/pkg/cosmosclient"
-	"github.com/tendermint/starport/starport/pkg/cosmosfaucet"
-	"github.com/tendermint/starport/starport/pkg/xurl"
+	envtest "github.com/notional-labs/tinyport/integration"
+	"github.com/notional-labs/tinyport/tinyport/pkg/cosmosclient"
+	"github.com/notional-labs/tinyport/tinyport/pkg/cosmosfaucet"
+	"github.com/notional-labs/tinyport/tinyport/pkg/xurl"
 )
 
 const (

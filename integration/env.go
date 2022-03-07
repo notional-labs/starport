@@ -17,20 +17,20 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/tendermint/starport/starport/chainconfig"
-	"github.com/tendermint/starport/starport/pkg/availableport"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner"
-	"github.com/tendermint/starport/starport/pkg/cmdrunner/step"
-	"github.com/tendermint/starport/starport/pkg/cosmosfaucet"
-	"github.com/tendermint/starport/starport/pkg/gocmd"
-	"github.com/tendermint/starport/starport/pkg/httpstatuschecker"
-	"github.com/tendermint/starport/starport/pkg/xexec"
-	"github.com/tendermint/starport/starport/pkg/xurl"
+	"github.com/notional-labs/tinyport/tinyport/chainconfig"
+	"github.com/notional-labs/tinyport/tinyport/pkg/availableport"
+	"github.com/notional-labs/tinyport/tinyport/pkg/cmdrunner"
+	"github.com/notional-labs/tinyport/tinyport/pkg/cmdrunner/step"
+	"github.com/notional-labs/tinyport/tinyport/pkg/cosmosfaucet"
+	"github.com/notional-labs/tinyport/tinyport/pkg/gocmd"
+	"github.com/notional-labs/tinyport/tinyport/pkg/httpstatuschecker"
+	"github.com/notional-labs/tinyport/tinyport/pkg/xexec"
+	"github.com/notional-labs/tinyport/tinyport/pkg/xurl"
 )
 
 const (
 	ServeTimeout = time.Minute * 15
-	StarportApp  = "starport"
+	StarportApp  = "tinyport"
 	ConfigYML    = "config.yml"
 )
 
@@ -53,7 +53,7 @@ func New(t *testing.T) Env {
 	t.Cleanup(cancel)
 
 	if !xexec.IsCommandAvailable(StarportApp) {
-		t.Fatal("starport needs to be installed")
+		t.Fatal("tinyport needs to be installed")
 	}
 
 	return e

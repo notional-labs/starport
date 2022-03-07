@@ -49,7 +49,7 @@ jobs:
         if: env.GIT_DIFF
         with:
           go-version: 1.16
-      - name: Install Starport
+      - name: Install Tinyport
         if: env.GIT_DIFF
         run: go install ./...
       - name: Run Integration Tests

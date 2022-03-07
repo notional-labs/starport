@@ -1,8 +1,8 @@
-# Set up your Starport development environment 
+# Set up your Tinyport development environment 
 
-To ensure you have a successful experience developing with Starport, make sure that your local system meets these technical requirements.
+To ensure you have a successful experience developing with Tinyport, make sure that your local system meets these technical requirements.
 
-Starport is supported for the following operating systems:
+Tinyport is supported for the following operating systems:
 
 - GNU/Linux
 - macOS
@@ -27,32 +27,32 @@ Ensure the Go environment variables are [set properly](https://golang.org/doc/go
 1. Edit your `~/.bashrc` file and add `export PATH=$PATH:$(go env GOPATH)/bin`. 
 2. To apply the changes, run `source ~/.bashrc`.
 
-## Remove existing Starport installations 
+## Remove existing Tinyport installations 
 
-Before you install a new version of Starport, remove all existing Starport installations. 
+Before you install a new version of Tinyport, remove all existing Tinyport installations. 
 
-1. Remove the Starport binary with `rm $(which starport)`
+1. Remove the Tinyport binary with `rm $(which tinyport)`
 
    Depending on your user permissions, run the command with or without `sudo`.
 
-2. Repeat this step until all `starport` installations are removed from your system.
+2. Repeat this step until all `tinyport` installations are removed from your system.
 
-`curl https://get.starport.network/starport! | bash`
+`curl https://get.tinyport.network/tinyport! | bash`
 
-See [Install Starport](docs/install.md).
+See [Install Tinyport](docs/install.md).
 
-## Clone the Starport repo
+## Clone the Tinyport repo
 
-`git clone --depth=1 git@github.com:tendermint/starport.git`
+`git clone --depth=1 git@github.com:notional-labs/tinyport.git`
 
 ## Run make install 
 
-1. After you clone the `starport` repo, change into the root directory `cd starport`.
+1. After you clone the `tinyport` repo, change into the root directory `cd tinyport`.
 
 2. Run `make install`.
 
-## Verify Your Starport version 
+## Verify Your Tinyport version 
 
-To verify the version of Starport you have installed, run `starport version`. 
+To verify the version of Tinyport you have installed, run `tinyport version`. 
 
-The latest version is `Starport version: development`. 
+The latest version is `Tinyport version: development`. 

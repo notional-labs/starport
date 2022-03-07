@@ -1,3 +1,3 @@
-FROM starport/cli:develop
+FROM tinyport/cli:develop
 
 USER root

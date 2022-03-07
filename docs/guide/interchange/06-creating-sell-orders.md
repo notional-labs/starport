@@ -17,10 +17,10 @@ message SellOrderPacketData {
 }
 ```
 
-Now, use Starport CLI to build the proto files for the `send-sell-order` command. You used this command in a previous chapter. 
+Now, use Tinyport CLI to build the proto files for the `send-sell-order` command. You used this command in a previous chapter. 
 
 ```bash
-starport generate proto-go
+tinyport generate proto-go
 ```
 
 ## Message Handling in SendSellOrder

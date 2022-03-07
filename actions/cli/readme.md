@@ -1,5 +1,5 @@
-# Starport CLI Action
-This action makes the `starport` CLI available as a Github Action.
+# Tinyport CLI Action
+This action makes the `tinyport` CLI available as a Github Action.
 
 ## Quick start
 
@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Print Help 
-        uses: tendermint/starport/actions/cli@develop
+        uses: notional-labs/tinyport/actions/cli@develop
         with:
           args: -h 
 ```

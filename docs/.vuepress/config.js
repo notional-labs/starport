@@ -1,6 +1,6 @@
 module.exports = {
   theme: "cosmos",
-  title: "Starport",
+  title: "Tinyport",
   head: [
     [
       "script",
@@ -33,8 +33,8 @@ module.exports = {
           title: "Resources",
           children: [
             {
-              title: "Starport on Github",
-              path: "https://github.com/tendermint/starport",
+              title: "Tinyport on Github",
+              path: "https://github.com/notional-labs/tinyport",
             },
             {
               title: "Cosmos SDK Docs",
@@ -51,12 +51,12 @@ module.exports = {
     footer: {
       question: {
         text:
-          "Chat with Starport and Cosmos SDK developers in <a href='https://discord.gg/ignt' target='_blank'>Discord</a>.",
+          "Chat with Tinyport and Cosmos SDK developers in <a href='https://discord.gg/ignt' target='_blank'>Discord</a>.",
       },
       logo: "/logo.svg",
       textLink: {
-        text: "starport.com",
-        url: "https://starport.com/",
+        text: "tinyport.com",
+        url: "https://tinyport.com/",
       },
       services: [
         {

@@ -1,6 +1,6 @@
-# Starport article templates
+# Tinyport article templates
 
-Use these templates along with our style guide to help you create articles for the Starport community. 
+Use these templates along with our style guide to help you create articles for the Tinyport community. 
 
 Choose the template that best fits the kind of content you're creating:
 

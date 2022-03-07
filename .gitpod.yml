@@ -1,9 +1,9 @@
 image:
   file: .gitpod.Dockerfile
 
-checkoutLocation: "starport"
+checkoutLocation: "tinyport"
 
-workspaceLocation: "./starport/.gitpod"
+workspaceLocation: "./tinyport/.gitpod"
 
 tasks:
   - name: Open the Readme
@@ -13,8 +13,8 @@ tasks:
 
     init: |
       ##
-      ## install Starport
-      make -C /workspace/starport install
+      ## install Tinyport
+      make -C /workspace/tinyport install
 
     command: |
       ##

@@ -1,4 +1,4 @@
-module github.com/tendermint/starport
+module github.com/notional-labs/tinyport
 
 go 1.16
 
@@ -31,13 +31,11 @@ require (
 	github.com/iancoleman/strcase v0.2.0
 	github.com/imdario/mergo v0.3.12
 	github.com/jpillora/chisel v1.7.7
-	github.com/manifoldco/promptui v0.9.0
 	github.com/mattn/go-zglob v0.0.3
 	github.com/otiai10/copy v1.6.0
 	github.com/pelletier/go-toml v1.9.4
 	github.com/pkg/errors v0.9.1
 	github.com/radovskyb/watcher v1.0.7
-	github.com/rdegges/go-ipify v0.0.0-20150526035502-2d94a6a86c40
 	github.com/rs/cors v1.7.0
 	github.com/spf13/cast v1.4.1
 	github.com/spf13/cobra v1.2.1
