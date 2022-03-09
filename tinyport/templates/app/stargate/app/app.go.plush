@@ -87,7 +87,7 @@ import (
 	tmos "github.com/tendermint/tendermint/libs/os"
 	dbm "github.com/tendermint/tm-db"
 
-	"github.com/notional-labs/tinyport/tinyport/pkg/cosmoscmd"
+	cosmoscmd "<%= ModulePath %>/cmd/<%= BinaryNamePrefix %>d/cmd"
 	"github.com/notional-labs/tinyport/tinyport/pkg/openapiconsole"
 
 	"<%= ModulePath %>/docs"
