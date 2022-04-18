@@ -192,6 +192,18 @@ func appModifyStargate(replacer placeholder.Replacer, opts *CreateOptions) genny
 		replacement = fmt.Sprintf(template, module.PlaceholderSgAppInitGenesis, opts.ModuleName)
 		content = replacer.Replace(content, module.PlaceholderSgAppInitGenesis, replacement)
 
+		// Begin blocker
+		template = `%[2]vmoduletypes.ModuleName,
+%[1]v`
+		replacement = fmt.Sprintf(template, module.PlaceholderSgAppBeginBlocker, opts.ModuleName)
+		content = replacer.Replace(content, module.PlaceholderSgAppBeginBlocker, replacement)
+
+		// End blocker
+		template = `%[2]vmoduletypes.ModuleName,
+%[1]v`
+		replacement = fmt.Sprintf(template, module.PlaceholderSgAppEndBlocker, opts.ModuleName)
+		content = replacer.Replace(content, module.PlaceholderSgAppEndBlocker, replacement)
+
 		// Param subspace
 		template = `paramsKeeper.Subspace(%[2]vmoduletypes.ModuleName)
 %[1]v`

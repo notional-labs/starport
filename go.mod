@@ -10,12 +10,12 @@ require (
 	github.com/cenkalti/backoff v2.2.1+incompatible
 	github.com/charmbracelet/glow v1.4.0
 	github.com/containerd/containerd v1.5.8 // indirect
-	github.com/cosmos/cosmos-sdk v0.44.6
+	github.com/cosmos/cosmos-sdk v0.45.3
 	github.com/cosmos/go-bip39 v1.0.0
 	github.com/cosmos/ibc-go/v2 v2.0.3
 	github.com/docker/docker v20.10.7+incompatible
 	github.com/emicklei/proto v1.9.0
-	github.com/fatih/color v1.12.0
+	github.com/fatih/color v1.13.0
 	github.com/ghodss/yaml v1.0.0
 	github.com/go-git/go-git/v5 v5.1.0
 	github.com/gobuffalo/envy v1.9.0 // indirect
@@ -42,22 +42,22 @@ require (
 	github.com/pkg/errors v0.9.1
 	github.com/radovskyb/watcher v1.0.7
 	github.com/rogpeppe/go-internal v1.6.2 // indirect
-	github.com/rs/cors v1.7.0
+	github.com/rs/cors v1.8.2
 	github.com/spf13/cast v1.4.1
-	github.com/spf13/cobra v1.2.1
+	github.com/spf13/cobra v1.4.0
 	github.com/spf13/pflag v1.0.5
-	github.com/stretchr/testify v1.7.0
+	github.com/stretchr/testify v1.7.1
 	github.com/takuoki/gocase v1.0.0
 	github.com/tendermint/flutter/v2 v2.0.3
-	github.com/tendermint/tendermint v0.34.14
-	github.com/tendermint/tm-db v0.6.4
+	github.com/tendermint/tendermint v0.34.19
+	github.com/tendermint/tm-db v0.6.6
 	github.com/tendermint/vue v0.3.0
-	golang.org/x/mod v0.4.2
+	golang.org/x/mod v0.5.0
 	golang.org/x/net v0.0.0-20220127200216-cd36cc0744dd // indirect
 	golang.org/x/sync v0.0.0-20210220032951-036812b2e83c
 	golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
 	google.golang.org/genproto v0.0.0-20220302033224-9aa15565e42a // indirect
-	google.golang.org/grpc v1.44.0
+	google.golang.org/grpc v1.45.0
 )
 
 replace (
