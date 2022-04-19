@@ -13,6 +13,7 @@ require (
 	github.com/cosmos/cosmos-sdk v0.45.3
 	github.com/cosmos/go-bip39 v1.0.0
 	github.com/cosmos/ibc-go/v2 v2.0.3
+	github.com/cosmos/ibc-go/v3 v3.0.0
 	github.com/docker/docker v20.10.7+incompatible
 	github.com/emicklei/proto v1.9.0
 	github.com/fatih/color v1.13.0
