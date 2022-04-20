@@ -20,6 +20,8 @@ const (
 	PlaceholderSgAppScopedKeeper        = "// this line is used by tinyport scaffolding # stargate/app/scopedKeeper"
 	PlaceholderSgAppBeforeInitReturn    = "// this line is used by tinyport scaffolding # stargate/app/beforeInitReturn"
 	PlaceholderSgAppMaccPerms           = "// this line is used by tinyport scaffolding # stargate/app/maccPerms"
+	PlaceholderSgAppICAArgument         = "// this line is used by tinyport scaffolding # stargate/app/argument"
+
 
 	// Placeholders in Stargate app.go for wasm
 	PlaceholderSgWasmAppEnabledProposals = "// this line is used by tinyport scaffolding # stargate/wasm/app/enabledProposals"

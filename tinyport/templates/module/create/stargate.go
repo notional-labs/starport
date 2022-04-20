@@ -159,14 +159,18 @@ func appModifyStargate(replacer placeholder.Replacer, opts *CreateOptions) genny
 			ibcKeeperArgument = module.PlaceholderIBCAppKeeperArgument
 		}
 		template = `%[3]v
+		scoped%[5]vKeeper := app.CapabilityKeeper.ScopeToModule(%[2]vmoduletypes.ModuleName)
 		app.%[5]vKeeper = *%[2]vmodulekeeper.NewKeeper(
 			appCodec,
 			keys[%[2]vmoduletypes.StoreKey],
 			keys[%[2]vmoduletypes.MemStoreKey],
 			app.GetSubspace(%[2]vmoduletypes.ModuleName),
+			app.ICAControllerKeeper,
+			scoped%[5]vKeeper,
 			%[4]v
 			%[6]v)
 		%[2]vModule := %[2]vmodule.NewAppModule(appCodec, app.%[5]vKeeper, app.AccountKeeper, app.BankKeeper)
+		%[2]vIBCModule := %[2]vmodule.NewIBCModule(app.%[5]vKeeper)
 
 		%[1]v`
 		replacement = fmt.Sprintf(
@@ -209,6 +213,12 @@ func appModifyStargate(replacer placeholder.Replacer, opts *CreateOptions) genny
 %[1]v`
 		replacement = fmt.Sprintf(template, module.PlaceholderSgAppParamSubspace, opts.ModuleName)
 		content = replacer.Replace(content, module.PlaceholderSgAppParamSubspace, replacement)
+
+		// App IBCModule arg
+		template = `%[2]vIBCModule,
+%[1]v`
+		replacement = fmt.Sprintf(template, module.PlaceholderSgAppICAArgument, opts.ModuleName)
+		content = replacer.Replace(content, module.PlaceholderSgAppICAArgument, replacement)
 
 		newFile := genny.NewFileS(path, content)
 		return r.File(newFile)
