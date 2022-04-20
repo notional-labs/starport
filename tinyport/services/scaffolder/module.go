@@ -29,7 +29,7 @@ import (
 
 const (
 	wasmImport    = "github.com/CosmWasm/wasmd"
-	wasmVersion   = "v0.16.0"
+	wasmVersion   = "v0.24.0"
 	extrasImport  = "github.com/tendermint/spm-extras"
 	extrasVersion = "v0.1.0"
 	appPkg        = "app"
