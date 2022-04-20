@@ -8,6 +8,9 @@ import (
 	"github.com/cosmos/cosmos-sdk/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	paramtypes "github.com/cosmos/cosmos-sdk/x/params/types"
+	capabilitykeeper "github.com/cosmos/cosmos-sdk/x/capability/keeper"
+	capabilitytypes "github.com/cosmos/cosmos-sdk/x/capability/types"
+	icacontrollerkeeper "github.com/cosmos/ibc-go/v3/modules/apps/27-interchain-accounts/controller/keeper"
 	"<%= modulePath %>/x/<%= moduleName %>/types"
 	<%= if (isIBC) { %>"github.com/notional-labs/tinyport/tinyport/pkg/cosmosibckeeper"<% } %>
 )
@@ -19,6 +22,8 @@ type (
 		storeKey 	sdk.StoreKey
 		memKey   	sdk.StoreKey
 		paramstore	paramtypes.Subspace
+		scopedKeeper        capabilitykeeper.ScopedKeeper
+		icaControllerKeeper icacontrollerkeeper.Keeper
 		<%= for (dependency) in dependencies { %>
         <%= dependency.Name %>Keeper types.<%= title(dependency.Name) %>Keeper<% } %>
 	}
@@ -29,16 +34,18 @@ func NewKeeper(
     storeKey,
     memKey sdk.StoreKey,
 	ps paramtypes.Subspace,
+	iaKeeper icacontrollerkeeper.Keeper,
+	scopedKeeper capabilitykeeper.ScopedKeeper,
     <%= if (isIBC) { %>channelKeeper cosmosibckeeper.ChannelKeeper,
     portKeeper cosmosibckeeper.PortKeeper,
     scopedKeeper cosmosibckeeper.ScopedKeeper,<% } %>
     <%= for (dependency) in dependencies { %><%= dependency.Name %>Keeper types.<%= title(dependency.Name) %>Keeper,<% } %>
 ) *Keeper {
+
 	// set KeyTable if it has not already been set
 	if !ps.HasKeyTable() {
 		ps = ps.WithKeyTable(types.ParamKeyTable())
 	}
-
 	return &Keeper{
 		<%= if (isIBC) { %>Keeper: cosmosibckeeper.NewKeeper(
 			types.PortKey,
@@ -51,10 +58,16 @@ func NewKeeper(
 		storeKey: 	storeKey,
 		memKey:   	memKey,
 		paramstore:	ps,
+		scopedKeeper:        scopedKeeper,
+		icaControllerKeeper: iaKeeper,
 		<%= for (dependency) in dependencies { %><%= dependency.Name %>Keeper: <%= dependency.Name %>Keeper,<% } %>
 	}
 }
 
 func (k Keeper) Logger(ctx sdk.Context) log.Logger {
 	return ctx.Logger().With("module", fmt.Sprintf("x/%s", types.ModuleName))
+}
+
+func (k *Keeper) ClaimCapability(ctx sdk.Context, cap *capabilitytypes.Capability, name string) error {
+	return k.scopedKeeper.ClaimCapability(ctx, cap, name)
 }
